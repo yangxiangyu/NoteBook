@@ -44,6 +44,7 @@
 -d wom_production \
 -u mongodb -p kmsocialmongodb2012 \
 -o  wom_production
+
 ##恢复mongodb
 >mongorestore -d <数据库名>  --drop <备份数据的目录>
 
@@ -55,7 +56,9 @@
 > cfg = rs.conf()
 cfg.members[1].host = "mongodb1.example.net:27017"
 rs.reconfig(cfg)
+
 3. 添加rs复制集
 >rs.add()
+
 4. 指定认证数据库
 >--authenticationDatabase <DBname>
