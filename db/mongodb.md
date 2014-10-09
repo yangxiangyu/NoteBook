@@ -9,7 +9,7 @@
 		"members" : [
 			{
 				"_id" : 7,
-				"name" : "z004.kmtongji.com:8140",
+				"name" : "z004:8140",
 				"health" : 1,
 				"state" : 1,
 				"stateStr" : "PRIMARY",
@@ -22,7 +22,7 @@
 			},
 			{
 				"_id" : 8,
-				"name" : "z005.kmtongji.com:8140",
+				"name" : "z005:8140",
 				"health" : 1,
 				"state" : 2,
 				"stateStr" : "SECONDARY",
@@ -32,7 +32,7 @@
 				"lastHeartbeat" : ISODate("2014-10-08T11:52:41Z"),
 				"lastHeartbeatRecv" : ISODate("2014-10-08T11:52:42Z"),
 				"pingMs" : 0,
-				"syncingTo" : "z004.kmtongji.com:8140"
+				"syncingTo" : "z004:8140"
 			}
 		],
 		"ok" : 1
@@ -42,7 +42,7 @@
 ##dump mongodb数据库
 >mongodump -h localhost:8140 \ 
 -d wom_production \
--u mongodb -p kmsocialmongodb2012 \
+-u <uname> -p <passwd> \
 -o  wom_production
 
 ##恢复mongodb
