@@ -42,7 +42,7 @@
 ##dump mongodb数据库
 >mongodump -h localhost:8140 \ 
 -d wom_production \
--u <uname> -p <passwd> \
+-u < uname> -p < passwd> \
 -o  wom_production
 
 ##恢复mongodb
