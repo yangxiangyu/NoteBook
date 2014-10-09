@@ -1,42 +1,42 @@
 #mongodb迁移到TokuMX
 
 ##查看oplog的时间戳
->rs0:PRIMARY> rs.status()
-{
-	"set" : "rs0",
-	"date" : ISODate("2014-10-08T11:52:42Z"),
-	"myState" : 1,
-	"members" : [
-		{
-			"_id" : 7,
-			"name" : "z004.kmtongji.com:8140",
-			"health" : 1,
-			"state" : 1,
-			"stateStr" : "PRIMARY",
-			"uptime" : 17668,
-			"optime" : Timestamp(1412769162, 21),
-			"optimeDate" : ISODate("2014-10-08T11:52:42Z"),
-			"electionTime" : Timestamp(1412751541, 1),
-			"electionDate" : ISODate("2014-10-08T06:59:01Z"),
-			"self" : true
-		},
-		{
-			"_id" : 8,
-			"name" : "z005.kmtongji.com:8140",
-			"health" : 1,
-			"state" : 2,
-			"stateStr" : "SECONDARY",
-			"uptime" : 2331,
-			"optime" : Timestamp(1412769161, 3),
-			"optimeDate" : ISODate("2014-10-08T11:52:41Z"),
-			"lastHeartbeat" : ISODate("2014-10-08T11:52:41Z"),
-			"lastHeartbeatRecv" : ISODate("2014-10-08T11:52:42Z"),
-			"pingMs" : 0,
-			"syncingTo" : "z004.kmtongji.com:8140"
-		}
-	],
-	"ok" : 1
-}
+	rs0:PRIMARY> rs.status()
+	{
+		"set" : "rs0",
+		"date" : ISODate("2014-10-08T11:52:42Z"),
+		"myState" : 1,
+		"members" : [
+			{
+				"_id" : 7,
+				"name" : "z004.kmtongji.com:8140",
+				"health" : 1,
+				"state" : 1,
+				"stateStr" : "PRIMARY",
+				"uptime" : 17668,
+				"optime" : Timestamp(1412769162, 21),
+				"optimeDate" : ISODate("2014-10-08T11:52:42Z"),
+				"electionTime" : Timestamp(1412751541, 1),
+				"electionDate" : ISODate("2014-10-08T06:59:01Z"),
+				"self" : true
+			},
+			{
+				"_id" : 8,
+				"name" : "z005.kmtongji.com:8140",
+				"health" : 1,
+				"state" : 2,
+				"stateStr" : "SECONDARY",
+				"uptime" : 2331,
+				"optime" : Timestamp(1412769161, 3),
+				"optimeDate" : ISODate("2014-10-08T11:52:41Z"),
+				"lastHeartbeat" : ISODate("2014-10-08T11:52:41Z"),
+				"lastHeartbeatRecv" : ISODate("2014-10-08T11:52:42Z"),
+				"pingMs" : 0,
+				"syncingTo" : "z004.kmtongji.com:8140"
+			}
+		],
+		"ok" : 1
+	}
 
 
 ##dump mongodb数据库
